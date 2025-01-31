@@ -1,0 +1,303 @@
+.left-hand-side-background{
+  width: 236px;
+  transition: width 0.5s;
+}
+
+.left-hand-side{
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 236px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+
+  background-color: white;
+  border-right-width:0.05px ;
+  border-right-style: solid;
+  border-block-color: rgb(215, 215, 215);
+
+  transition: width 0.5s;
+  background-color: transparent;
+}
+
+img{
+  object-fit: cover;
+}
+
+.profile-icon-img{
+  width: 30px;
+  border-radius: 100%;
+  margin-right: 12px;
+}
+
+.home,
+.search,
+.explore,
+.reels,
+.messages,
+.notification,
+.create,
+.profile,
+.menu{
+  display: flex;
+  align-items: center;
+  padding: 6px 0px 6px 6px ;
+  border-radius: 8px;
+  margin: 4px 13px 4px 4px;
+  transition: background-color 0.15s;
+  position: relative;
+}
+
+.home-icon,
+.search-icon,
+.explore-icon,
+.menu-icon{
+  width: 30px;
+  margin-right: 12px;
+}
+
+.instagram-logo-img{
+  width: 120px;
+}
+
+.instagram-logo{
+  margin-bottom: 30px;
+  margin-top: 35px;
+  position: relative;
+}
+
+.menu{
+  margin-top: 60px;
+}
+
+.home-text,
+.search-text,
+.explore-text,
+.reels-text,
+.messages-text,
+.notification-text,
+.create-text,
+.profile-text,
+.menu-text{
+  font-family: Roboto;
+  transition: color 0.15s, height 0.15s;
+}
+
+.reels-icon-img{
+  width: 30px;
+  margin-right: 12px;
+}
+
+.home:hover,
+.search:hover,
+.explore:hover,
+.reels:hover,
+.messages:hover,
+.notification:hover,
+.create:hover,
+.profile:hover,
+.menu:hover{
+  background-color: rgb(239, 239, 239);
+  cursor: pointer;
+}
+
+.instagram-logo .tooltip,
+.home .tooltip,
+.search .tooltip,
+.explore .tooltip,
+.reels .tooltip,
+.messages .tooltip,
+.notification .tooltip,
+.create .tooltip,
+.profile .tooltip,
+.menu .tooltip{
+  position: absolute;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.966);
+  font-weight: 100;
+  font-family: Roboto;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px 5px 5px 5px;
+  bottom: -15px;
+  right: 80px;
+}
+
+.instagram-logo:hover .tooltip,
+.home:hover .tooltip,
+.search:hover .tooltip,
+.explore:hover .tooltip,
+.reels:hover .tooltip,
+.messages:hover .tooltip,
+.notification:hover .tooltip,
+.create:hover .tooltip,
+.profile:hover .tooltip,
+.menu:hover .tooltip{
+  opacity: 1;
+}
+
+.messages-icon{
+  position: relative;
+}
+
+.notification-number{
+  display: flex;
+  color: white;
+  background-color: rgb(174, 77, 219);
+  font-size: 16px;
+  border-radius: 100%;
+  width: 19px;
+  height: 19px;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  top: -2px;
+  right: 2px;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+
+}
+
+.womp{
+  font-weight: bold;
+  font-size: 30px;
+  height: 30px;
+  transition: color 0.15s, height 0.15s; 
+}
+
+.love{
+  width: 0px;
+  color: transparent;
+  height: 0px;
+  transition: color 0.15s
+}
+
+@media (max-width:1260px) {
+  .home-text,
+ .search-text,
+ .explore-text,
+ .reels-text,
+ .messages-text,
+ .notification-text,
+ .create-text,
+ .profile-text,
+ .menu-text,
+ .womp{
+   color: rgba(255, 255, 255, 0);
+   width: 0px;
+   height: 0px;
+   padding: 0px;
+   margin: 0px;
+ }
+
+ .love{
+  color: black;
+  height: 30px;
+  width: 72px;
+  padding: 0px;
+  margin: 0px;
+  font-weight: bold;
+ }
+
+ .left-hand-side{
+  width: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  margin: 0px;
+ }
+
+ .left-hand-side-background{
+  width: 72px;
+ }
+
+ .home,
+ .search,
+ .explore,
+ .reels,
+ .messages,
+ .notification,
+ .create,
+ .profile,
+ .menu{
+   padding: 0px;
+   margin: 0px;
+ }
+
+ .home-icon,
+ .search-icon,
+ .explore-icon{
+  margin: 4px;
+  padding: 6px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+ }
+
+ .reels-icon-img{
+  padding: 6px;
+  margin: 4px;
+ }
+
+ .profile-icon-img{
+  margin: 0px;
+  padding: 0px;
+  padding: 6px;
+  margin: 4px;
+ }
+
+ .menu-icon{
+  margin: 6px;
+  padding: 4px;
+ }
+
+ .menu{
+  margin-top: 55px;
+ }
+}
+
+@media (max-width:770px){
+  .left-hand-side img,
+  .left-hand-side div,
+  .left-hand-side .tooltip{
+    height: 0px;
+    width: 0px;
+    color: rgba(0, 255, 255, 0);
+    background-color: rgba(255, 0, 0, 0);
+  }
+
+  .left-hand-side{
+    width: 0px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+  }
+
+  .home:hover,
+ .search:hover,
+ .explore:hover,
+ .reels:hover,
+ .messages:hover,
+ .notification:hover,
+ .create:hover,
+ .profile:hover,
+ .menu:hover{
+   background-color: rgba(237, 48, 48, 0);
+   padding: 0px;
+   margin: 0px;
+ }
+
+ .left-hand-side-background{
+  width: 0px;
+  height: 0px;
+  background-color: rgba(255, 0, 0, 0);
+ }
+}

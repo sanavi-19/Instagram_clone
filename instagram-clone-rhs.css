@@ -1,0 +1,149 @@
+.right-hand-side{
+  width: 305px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+  margin-top: 15px;
+  
+}
+
+.img{
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  align-self: center;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.profile-icon1{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.profile1{
+  display: flex;
+  flex-direction: column;
+  padding-left: 7px;
+  flex: 1;
+}
+
+.profile-name{
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.name{
+  font-size: 16px;
+  color: rgb(155, 155, 155);
+}
+
+.switch{
+  padding-right: 7px;
+  font-size: 14px;
+  color: rgb(202, 89, 254);
+}
+
+.switch:hover{
+  color: rgb(103, 47, 129);
+  cursor: pointer;
+}
+
+.suggestion1{
+  display: flex;
+  margin-top: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: gray;
+}
+
+.suggested1{
+  flex: 1;
+}
+
+.see_all{
+  color: black;
+  font-size: 14px;
+  width: 48px;
+  cursor: pointer;
+}
+
+.see_all:hover{
+  color: rgb(155, 155, 155);
+}
+
+.link1,a{
+  font-size: 13px;
+  color: rgb(155, 155, 155);
+  text-decoration: none;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.version{
+  font-size: 13px;
+  color: rgb(155, 155, 155);
+}
+
+@media (max-width:1150px) {
+  .right-hand-side{
+    width: 0px;
+   height: 0px;
+   margin: 0px;
+  }
+
+  .profile-icon1{
+    height: 0px;
+    width: 0px;
+    color: rgba(240, 248, 255, 0);
+    margin: 0px;
+  }
+
+  .switch,
+  .name{
+    color: rgba(0, 255, 255, 0);
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .link1,a{
+    width: 0px;
+    font-size: 0px;
+    height: 0px;
+  }
+
+  .suggested1,
+  .switch:hover{
+    color: rgba(226, 32, 32, 0);
+    width: 0px;
+    height: 0px;
+    cursor: auto;
+    margin: 0px
+  }
+
+  .suggestion1{
+    margin: 0px;
+  }
+
+  .see_all,
+  .profile-name{
+    color: rgba(240, 248, 255, 0);
+    width: 0px;
+    height: 0px;
+  }
+
+  .img{
+    width: 0px;
+    height: 0px;
+  }
+
+  .version{
+    color: rgba(255, 0, 0, 0);
+    width: 0px;
+    height: 0px;
+  }
+}
